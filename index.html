@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .crimson {
+      color: crimson;
+    }
+
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <a href="">google</a>
+  <p>지금 만든 p tag입니다.</p>
+  
+  <script>
+    console.log("Hello, World!")
+    const pTag = document.querySelector('p')
+
+    // pTag.setAttribute('my_attribute', 'my_value')
+    // console.log(pTag.getAttribute('my_attribute'))
+    // ============================================
+    
+    pTag.textContent = '새로운 내용입니다.'
+
+    const aTag = document.querySelector('a')
+    aTag.setAttribute('href', 'https://www.google.com')
+
+  </script>
+
+</body>
+</html>

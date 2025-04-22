@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <script>
+    // 비교 연산자 사용시 주의
+    let x = 5
+    console.log(0 < x < 10) 
+
+    x = 20
+    console.log(0 < x < 10) 
+    // 0 < x 이 결과는 true/false
+    // true/fals < 10
+
+    console.log(0 < x && x < 10)
+
+    console.log(true < 10)
+    console.log(true < 0)
+    console.log(true == 1)
+    console.log(true === 1)
+
+    // 파이썬에서는 []가 False였지만    
+    const val = []
+    if (val) {
+      console.log('True입니다.')
+    }
+
+
+    // while 과 for 는 동일하다.
+    let i = 0        //초기식
+    while (i < 3) {  // 조건식
+      console.log(i)
+      i += 1         // 증감식
+    }
+
+    i = 0
+    for(;i < 3;) {
+      console.log(i)
+      i += 1
+    }
+    const numbers = [1, 2, 3]
+    for(const val of numbers) {
+      // 파이선의 for in 문장과 비슷한한
+    }
+
+    // JS의 객체는 파이썬의 딕셔너리와와 비슷해 보이지만 다르다.
+    const user = {
+      name: '홍길동',
+      age: 22,
+    }
+    for(const key in user) {
+      console.log(key, user[key])
+    }
+  </script>
+</body>
+</html>
